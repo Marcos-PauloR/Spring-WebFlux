@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://admin:admin@cluster0.b8jiiet.mongodb.net/webFlux?retryWrites=true&w=majority&appName=Cluster0
+      uri: mongodb+srv://${DB_USER:admin}:${DB_PASSWORD}@cluster0.b8jiiet.mongodb.net/:${DB_NAME:webFlux}?retryWrites=true&w=majority&appName=Cluster0
   output:
     ansi:
       enabled: ALWAYS
