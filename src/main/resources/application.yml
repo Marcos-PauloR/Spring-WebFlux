@@ -5,3 +5,5 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
+  application:
+    name: webflux
